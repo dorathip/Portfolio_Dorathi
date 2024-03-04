@@ -59,10 +59,10 @@ To set up the project, follow these steps:
 1. Make sure you have the Chrome browser and XAMPP web server installed.
 
 2. Download the source code from the master branch of the GitHub repository 
-  https://github.com/rajakath/CS601_Project_Kathirvel/tree/master
+  https://github.com/dorathip/Portfolio_Dorathi.git
 
 3. Update the source code under the XAMPP web server's /xampp/htdocs directory.
 
-4. Open your browser and enter the URL http://localhost/Portfolio_Project_Dorathi/index.html to access the website.
+4. Open your browser and enter the URL http://localhost/Portfolio_Dorathi/index.html to access the website.
 
 Feel free to explore the website and learn more about me through the provided portfolio sections.
