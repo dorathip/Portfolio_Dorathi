@@ -1,0 +1,143 @@
+/* Styles for the gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Styles for each row of pictures */
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for each picture element */
+.picture {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 5px solid #ebebeb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles for the image within each picture */
+.picture img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles for the selected picture */
+.picture.selected {
+  transform: scale(1.1);
+}
+
+/* Styles for the caption overlay */
+.picture-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styles for the modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the content within the modal */
+.modal-content {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+/* Styles for the image within the modal */
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Styles for the arrow navigation buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styles for the hover effect on arrow buttons */
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styles for the left arrow button */
+.arrow.left {
+  left: 10px;
+}
+
+/* Styles for the right arrow button */
+.arrow.right {
+  right: 10px;
+}
+
+/* Media query for screen sizes up to 600px */
+@media (max-width: 600px) {
+
+  /* Styles for the gallery container */
+.gallery {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Styles for each row of pictures */
+.row {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the image within each picture */
+.picture img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles for the content within the modal */
+.modal-content {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+}

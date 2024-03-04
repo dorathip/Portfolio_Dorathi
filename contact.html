@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Contact Details</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">         
+    </head>
+    <body>
+        <div>
+        <!-- Header image and navigation links -->
+        <header id="grad1">
+            <img src="images/Dorathi_Logo.jpg" alt="logo - Dorathi Biography" id="logo">
+            <p id="logo-text">Dorathi Paranjothi</p>
+            <p id="logo-role-text"> Full Stack Developer</p>
+            <!--page navigation links-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="degree.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Contact page main section-->
+        <main>
+            <div id="div-style">
+              <p>Let us connect</p>
+            <form name="mainForm" id="mainFormId">
+              <!-- get name required field-->
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" minlength="2" name="name" 
+                  id="name" placeholder="Type your full name" required>
+                  <span id="span-name-error"></span>
+                </div> 
+                <!-- get email mail required field-->               
+                <div>
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" 
+                  placeholder="Type your email" required>
+                  <span id="span-email-error"></span>
+                </div>
+                <div>
+                    <label for="linkedInUrl">LinkedIn Url</label>
+                    <input type="text" name="linkedInUrl" id="linkedInUrl" 
+                    placeholder="Type your LinkedIn Url">
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" 
+                  placeholder="Type your message"></textarea>
+                </div>               
+                 <!-- form submit and reset button -->
+                 <div id="div-padding-button">                   
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                    <button type="reset" name="reset" id="reset">Reset</button>
+                    <span id="span-data-store-error"></span>
+                  </div>
+              <div id="div-contact">
+                <p>Contact me here </p>
+                    <!-- Embed Linked In logo and call my Linked In profile-->
+                    <img src="images/linkedin-icon-logo-png-transparent.png" 
+                    alt="logo - Linked In" class="image-style">
+                    <a href="https://www.linkedin.com/in/dorathi-paranjothi"
+                     target=”_blank”>LinkedIn: Dorathi Paranjothi </a> <br><br>
+                    <!--Embed Email logo and link the email compose window-->
+                    <img src="images/email-logo.png" alt="logo - Email" 
+                    class="image-style">
+                    <a href="mailto:paranjothi.dorathi@gmail.com" 
+                    target=”_blank”>Email: Dorathi Paranjothi</a> 
+            </div>
+            </form>
+            </div>           
+          </main>
+    </div>   
+        
+        <!-- sample copy right footer-->
+        <footer>
+            <h3>&copy;2023. Dorathi Paranjothi, License</h3> 
+        </footer>
+        <script src="js/contact.js"></script>    
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Page Gallery view</title>
+  <link rel="stylesheet" href="css/index-vue.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Container for the image sequence -->
+    <div class="image-sequence">
+      <!-- Dynamic image element with background image. 
+       it is not possible to move the dynamic styling of background-image 
+       directly to a CSS file. CSS files are static and don't support dynamic values -->
+      <div class="image" :style="`background-image: url(${currentImage})`"></div>
+    </div>
+  </div>
+
+  <!-- Vue.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <!-- Custom JavaScript file -->
+  <script src="js/index-vue.js"></script>
+</body>
+</html>

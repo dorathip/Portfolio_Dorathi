@@ -1,0 +1,31 @@
+{
+  "degrees": [
+      {
+          "degree": {
+              "school": "Madurai Kamaraj University, India",
+              "program": "Computer Science",
+              "type": "BS",
+              "year": "2004"            
+          }
+      },
+      {
+          "degree": {
+              "school": "Alagappa University, India",
+              "program": "Computer Applications",
+              "type": "MS",
+              "year": "2007"
+          
+          }
+      },
+
+      {
+          "degree": {
+              "school": "PRIST University, India",
+              "program": "Philosophy in Computer Science",
+              "type": "MS",
+              "year": "2009"
+          
+          }
+      }  
+  ]
+}

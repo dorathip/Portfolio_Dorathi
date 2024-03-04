@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biography Site Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div>
+        <!-- Header image and navigation links -->
+        <header id="grad1">
+            <!-- Logo -->
+            <img src="images/Dorathi_Logo.jpg" alt="logo - Dorathi Biography" id="logo">
+            <!-- Logo Text -->
+            <p id="logo-text">Dorathi Paranjothi</p>
+            <!-- Role Text -->
+            <p id="logo-role-text">Full Stack Developer</p>
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="degree.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Introduction Section -->
+            <div>
+                <p>Hello! I am <em>Dorathi Paranjothi</em>, a passionate Full Stack Developer.<br><br>
+                    As a Full Stack Developer, I have honed my skills in Java, Angular, React, Spring Boot, HTML, CSS, JavaScript, Node.js, 
+                    Express.js, MySQL, MongoDB, REST, XML, JSON, Apigee, AWS Lambda, Planisware, GitHub, GitLab, BitBucket, Jira and Kanban.
+                    I have developed Wholesale APIs and Ecommerce websites.  
+                 <em>I have worked in Healthcare, Health Insurance and Telecom projects as well. </em></p>
+            </div>
+
+           
+
+            <!-- Animation based on SVG -->
+            <div class="heart-container">
+                <svg class="heart-svg" xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 200 200">
+                    <circle class="heart-circle" cx="100" cy="100" r="50" fill="blue" />
+                    <path class="heart-path"
+                        d="M100,25 L100,100 A75,75 0 0,0 100,175 A75,75 0 0,0 100,25" fill="none"
+                        stroke="blue" stroke-width="10" id="heart-path" />
+                    <text class="heart-text" x="50%" y="50%" text-anchor="middle"
+                     fill="red" id="heart-text">
+                        Welcome to my Home page
+                    </text>
+                </svg>
+            </div>
+
+            <!-- Gallery Display using Vue.js -->
+            <div class="heart-container">
+                <iframe class="iframe-container" src="index-vue.html"></iframe>
+            </div> 
+        </main>
+    </div>
+
+    <!-- copyright footer -->
+    <footer>
+        <h3>&copy;2023. Dorathi Paranjothi, License</h3>
+    </footer>
+</body>
+
+</html>

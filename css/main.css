@@ -1,0 +1,126 @@
+/* initialize variables */
+body {
+    margin: 0;
+    padding: 0;
+    --blue: rgb(54, 11, 245);
+    --black: black;
+    --white: white;
+    --orange: orange;
+}
+
+/* set the style for the header */
+header {
+    text-align: center;
+    padding: 0;
+    background-color: var(--blue);
+    box-shadow: 0px 0px 15px var(--black);
+    position: fixed;
+    width: 100%;
+}
+
+#grad1 {
+    height: 200px;
+    background-color: var(--blue);
+     /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, skyblue, var(--blue));
+  }
+
+/* set the style for the main tag */
+main{
+    width: 50%;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+/* set the style for the logo image */
+#logo {
+    width: 100px;
+    vertical-align: bottom;
+    padding-top: 10px;
+    border-width: 1px;
+    border-color: var(--white);    
+}
+
+/* set the style for the logo text */
+#logo-text {
+    display: inline;
+    color: var(--white);
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+/* set the style for the logo role text */
+#logo-role-text
+{
+    display: inline;
+    color: var(--white);
+    font-size: 16px;
+    font-family: Georgia;
+}
+
+/* set the style for the navigation*/
+nav {
+    padding: 10px; 
+}
+
+/* set the style for the unordered list */
+nav ul {
+    list-style: none;
+}
+
+/* set the style for the unordered list items*/
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    padding: 0;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    background-color: var(--black);
+}
+
+/* set the style for the unordered list items while hover*/
+nav ul li:hover {
+    background-color: var(--orange);    
+}
+
+/* set the style for the anchor link */
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    width: 100px;    
+}
+
+/* set the style for the anchor link while hover */
+nav a:hover {
+    color: var(--black);
+}
+
+/* set the style for the footer page*/
+footer {
+    text-align: center;
+    background-color: var(--blue);
+    background-image: linear-gradient(to bottom right, skyblue, var(--blue));
+    box-shadow: 0px 0px 15px var(--black);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    padding: 10px;
+    font-family: Times New Roman;
+    font-size: 12px;
+    color: var(--white);    
+}
+
+/* On screens that are 600px wide or less, the background color is skyblue */
+/* On screens that are 600px wide or less, make the menu links stack on
+ top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: skyblue;
+        color: var(--white);
+    }
+}

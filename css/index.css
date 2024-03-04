@@ -1,0 +1,175 @@
+/* Set the style for the paragraph text */
+p {
+  color: navy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* Set the hello image style */
+#image-hello {
+  width: 100px;
+  vertical-align: bottom;
+  padding-top: 10px;
+  border-width: 1px;
+  border-color: var(--white);
+  background-color: chocolate;
+}
+
+.heart-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-svg {
+  width: 900px;
+  height: 400px;
+}
+
+.heart-circle {
+  fill: blue;
+}
+
+.heart-path {
+  fill: none;
+  stroke: blue;
+  stroke-width: 10;
+}
+
+/* Set the text color to white */
+.heart-text {
+  fill: orchid; 
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Set the blend mode to 'difference' */
+  mix-blend-mode: difference; 
+}
+
+/* Additional CSS for image gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.image-gallery-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery-item:hover {
+  transform: scale(1.1);
+}
+
+/* Styles for iframe */
+.iframe-container {
+  height: 300px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* CSS for heart animation */
+@keyframes dash {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes text {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+
+.heart-path {
+  animation: dash 3s infinite;
+}
+
+.heart-text {
+  animation: text 2s infinite alternate;
+}
+
+/* The slideIn animation is modified to continuously move the image from
+ left to right using the translateX transform property.
+The linear timing function ensures a smooth and consistent movement. 
+By adding infinite to the animation property, the animation will repeat indefinitely.
+Feel free to adjust the animation duration (5s in the example) and the 
+transform values to control the speed and direction of the image movement. */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-image {
+  animation: slideIn 1s forwards;
+}
+
+.animated-text {
+  /*color:blue;
+  font-size: 22px; 
+  font-weight: 100px;  */
+  font-family: "Arial", sans-serif;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: medium;
+  }
+  
+  .image-gallery-item {
+    width: 150px;
+    height: 150px;
+  }
+
+/* CSS for heart animation */
+@keyframes dash {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes text {
+  from {
+    font-size: 9px;
+  }
+  to {
+    font-size: 14px;
+  }
+}
+}

@@ -1,0 +1,87 @@
+/* Display label and data in the same line */
+.degree-info p {
+  display: flex;
+  align-items: center;
+}
+
+/* Set the degree label style */
+.degree-label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: black;
+  min-width: 180px;
+}
+
+/* Display data text style */
+.degree-data {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Result style */
+#result {
+  background-color: skyblue;
+  padding: 5px;
+  border: 1px solid blue;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+/* Paragraph display style */
+.degree-card {
+  background-color: skyblue;
+  border: 1px solid navy;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 220px;
+}
+
+/* Type display text style */
+.degree-type {
+  color: black;
+  font-style: italic;
+}
+
+/* Year display text style */
+.degree-year {
+  color: black;
+  font-size: 14px;
+}
+
+/* Degree card mouse hover style */
+.degree-card:hover {
+  border-color: orange;
+  background-color: lightseagreen;
+}
+
+/* H1 style */
+h1 {
+  font-size: 24px;
+  color: navy;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Media query for screen sizes up to 600px */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .degree-label {
+    min-width: auto;
+    font-size: 12px;
+  }
+
+  .degree-info p {
+    flex-direction: column;
+  }
+
+  .degree-data {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+}

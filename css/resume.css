@@ -1,0 +1,48 @@
+/* Animation for slide-in effect */
+#animation.slide-in {
+  animation: slideIn 1s ease;
+}
+
+/* Container for animation */
+#animation {
+  width: 100%;
+  height: 800px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+  /* Adjusting height for larger screens */
+  #animation {
+    height: 100px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1024px */
+@media (min-width: 1024px) {
+  /* Adjusting height for larger screens */
+  #animation {
+    height: 200px;
+  }
+}
+
+/* Styling for PDF viewer */
+#pdf-viewer {
+  width: 100%;
+  height: 400vh;
+}
+
+/* Media query for screens with a minimum width of 600px */
+@media (min-width: 600px) {
+  /* Adjusting height for larger screens */
+  #pdf-viewer {
+    width: 100%;
+    height: 70vh;
+  }
+  #animation {
+    height: 200px;
+  }
+}

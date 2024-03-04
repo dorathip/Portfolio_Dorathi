@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+   
+  <div>
+      <!-- Header image and navigation links -->
+      <header id="grad1">
+          <img src="images/Dorathi_Logo.jpg" alt="logo - Dorathi Biography" id="logo">
+          <p id="logo-text">Dorthi Paranjothi</p>
+          <p id="logo-role-text">Full Stack Developer</p>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="biography.html">Biography</a></li>
+                  <li><a href="degree.html">Education</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+      <div id="app">
+        <div class="gallery">
+          <!-- Display pictures in rows and columns -->
+          <div class="row" v-for="(row, rowIndex) in pictureRows" :key="rowIndex">
+            <div v-for="(picture, colIndex) in row" :key="colIndex" 
+              class="picture" :class="{ 'selected': picture.selected }"
+              @click="togglePicture(picture)">
+              <img :src="picture.url">
+              <div class="picture-caption">
+                {{ pictures[rowIndex * 3 + colIndex].category }}</div>
+              <div class="arrow left" @click.stop="prevPicture(picture)">&#8249;</div>
+              <div class="arrow right" @click.stop="nextPicture(picture)">&#8250;</div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Display a modal with the selected picture -->
+        <div class="modal" v-if="selectedPicture" @click="closeModal">
+          <div class="modal-content">
+            <img :src="selectedPicture.url">
+          </div>
+        </div>
+      </div>
+    </main>
+    
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+      <script src="js/gallery.js"></script>
+           
+  </div>
+  <!-- Sample copyright footer -->
+  <footer>
+      <h3>&copy;2023. Dorathi Paranjothi, License</h3> 
+  </footer>
+</body>
+</html>

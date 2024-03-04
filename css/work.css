@@ -1,0 +1,84 @@
+/* Declare the color variables */
+body {
+  --lightskyblue: lightskyblue;
+  --aliceblue: aliceblue;
+  --navy: navy;
+  --black: black;
+}
+
+/* Set the table, table header, and table data border value */
+table,
+td,
+th {
+  border: 2px solid var(--black);
+  width: 1500px;
+}
+
+/* Set the table style */
+table {
+  border-collapse: collapse;
+  /*width: 100%;*/
+}
+
+/* Set the table header style */
+th {
+  background-color: var(--navy);
+  color: var(--aliceblue);
+  padding: 15px;
+}
+
+/* Set the table row style */
+tr {
+  background-color: var(--lightskyblue);
+  padding: 10px;
+  width: 20%;
+}
+
+/* Set the table data style */
+td {
+  text-align: center;
+  padding: 15px;
+  width: 20%;
+}
+
+/* Set the paragraph text style */
+#paragraph-text {
+  text-align: center;
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: var(--black);
+}
+
+/* Set the works-table style */
+#works-table {
+  margin: 20px;
+  padding: 20px;
+  background-color: hsla(224, 63%, 56%, 0.342);
+  border: 1px solid #ccc;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Set the table row hover effect */
+tr:hover {
+  background-color: rgb(50, 72, 7);
+  color: white;
+}
+
+/* Media section */
+/* On screens that are 600px wide or less, adjust the styles */
+@media screen and (max-width: 600px) {
+/* Set the table, table header, and table data border value */
+table,
+td,
+th {
+  border: 2px solid var(--black);
+  width: 500px;
+  font-size: 14px;
+} 
+}

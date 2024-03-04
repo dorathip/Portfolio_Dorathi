@@ -1,0 +1,45 @@
+{
+    "works": [
+      {
+        "Organization": "Patch and Sparks",        			
+        "Role": "Software Developer",
+        "StartDate": "August 2023",
+        "EndDate": "November 2023",
+        "Address": "Texas, USA"
+      },
+      {        				
+        "Organization": "Dish Network",
+        "Role": "APIs and Integration Engineer",
+        "StartDate": "February 2023",
+        "EndDate": "May 2023",
+        "Address": "Colorado, USA"
+      }
+      ,
+      {        				
+        "Organization": "Fiable Consulting Inc.",
+        "Role": "Full Stack Developer",
+        "StartDate": "April 2022",
+        "EndDate": "October 2022",
+        "Address": "New Jersey, USA"
+      }
+      ,
+      {        				
+        "Organization": "Real InfoSoft Solutions",
+        "Role": "Full Stack Developer",
+        "StartDate": "February 2019",
+        "EndDate": "November 2021",
+        "Address": "Chennai, Tamilnadu, India"
+      }
+      ,
+      {        				
+        "Organization": "ILogix Innovative Solutions",
+        "Role": "Software Engineer",
+        "StartDate": "October 2011",
+        "EndDate": "December 2015",
+        "Address": "Chennai, Tamilnadu, India"
+      }
+    ]
+  }
+
+  
+  

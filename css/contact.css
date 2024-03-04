@@ -1,0 +1,135 @@
+/* defining and accessing global CSS variables */
+:root {
+  --blue: rgb(54, 11, 245);
+  --navy: navy;
+  --skyblue: skyblue;
+  --lightskyblue: lightskyblue;
+  --black: #000;
+  --white: #fff;
+  --grey: #808080;
+  --red: #ff0000;
+  --orange: #ffa500;
+}
+
+/* set the input box style */
+input[type="text"],
+select,
+textarea[name="message"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* set the label style */
+label {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* set the button style */
+button[name="submit"],
+button[name="reset"] {
+  width: 25%;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* set padding for the button controls */
+#div-padding-button {
+  padding: 10px;
+}
+
+/* set the font style for the paragraph text */
+p {
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: var(--navy);
+  padding: 5px;
+}
+
+/* set the style for the div */
+#div-style {
+  background-color: var(--lightskyblue);
+  border-width: 5px;
+  padding: 0px;
+  border-radius: 25px;
+  border-color: var(--skyblue);
+  border-style: solid; 
+  margin-top: 10px; 
+}
+
+/* set the style for the contact info div layout */
+#div-contact {
+  background-color: var(--lightskyblue);
+  border-width: 2px;
+  border-color: var(--blue);
+  padding: 10px;
+  padding-bottom: 50px;
+  border-radius: 25px;
+  border-style: solid;
+}
+
+/* set the span style */
+span{
+  color: var(--red);
+  font-size: 12px;
+}
+
+/* set the button inactive style */
+.inactive {
+  color: var(--white);  
+  font-size: larger; 
+}
+
+/* set the image display sizes */
+.image-style {
+  height: 25px;
+  width: 25px;
+}
+
+
+/* set the span error style */
+.error {
+  color: var(--red);
+  border: 2px dashed var(--red);
+}
+
+
+/* set the reset button style while hover*/
+button[type=reset]:hover {
+  background-color: var(--orange); 
+  color:var(--black);
+  font-weight: bold; 
+  font-size: large;  
+}
+
+/* set the submit button style class while hover*/
+.hoverSubmitButton:hover {
+  background-color: var(--orange); 
+  color:var(--black);
+  font-weight: bold; 
+  font-size: large;  
+}
+
+/* Responsive layout - makes a one column layout instead of a single-column layout
+   On screens that are 600px wide or less, the background color is skyblue */
+@media screen and (max-width: 600px) {
+  button[name="submit"],
+  button[name="reset"] {
+    width: 100px;
+  }
+}
